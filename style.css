@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+h1 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.input-guess {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-guess,
+.btn-restart {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-guess:hover,
+.btn-restart:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.result-message {
+    font-size: 18px;
+    color: #333333;
+    margin-top: 20px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.result-message.show {
+    opacity: 1;
+}
+
+.attempt-history {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 10px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+
+/* Améliorations pour les petits écrans */
+
+@media (max-width: 600px) {
+    .game-container {
+        padding: 15px;
+        max-width: 90%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .input-guess,
+    .btn-guess,
+    .btn-restart {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

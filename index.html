@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Devinette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Bienvenue dans le jeu de devinette !</h1>
+        <p>Devinez le nombre entre 1 et 100.</p>
+
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+
+        <input type="number" id="guess" aria-label="Entrez votre devinette" placeholder="Entrez votre devinette" class="input-guess">
+        <button onclick="makeGuess()" class="btn-guess" aria-label="Deviner">Deviner</button>
+
+        <ul id="attempt-history" class="attempt-history"></ul>
+        <p id="result" class="result-message"></p>
+
+        <button onclick="restartGame()" class="btn-restart" aria-label="Rejouer">Rejouer</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
